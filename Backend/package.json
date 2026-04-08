@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+  "test:server": "npm test -- tests/server.test.js",
+  "test:genai": "npm test -- tests/genai.test.js",
+  "test:watch": "npm test -- --watch",
+
+
+
+
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+    
+  },
+  "keywords": [],
+  "author": "", 
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.44.0",
+    "axios": "^1.13.6",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mysql2": "^3.19.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
+  }
+}
